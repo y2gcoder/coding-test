@@ -1,20 +1,13 @@
 n = int(input())
 x = list(map(int, input().split()))
 
-count = [0] * (max(x) + 1)
-
-for i in range(len(x)):
-    count[x[i]] += 1
+x.sort()
 
 result = 0
-for i in range(len(count)):
-    if i == 0:
-        continue
-    result += count[i] // i
-    if count[i] % i != 0:
-        if i >= len(count) - 1:
-            result += 1
-        else:
-            count[i+1] += 1
+i = 0
+while i < n:
+    member = x[i]
+    result += 1
+    i += x[i]
 
 print(result)
