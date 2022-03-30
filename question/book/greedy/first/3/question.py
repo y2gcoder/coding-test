@@ -1,5 +1,4 @@
 s = list(map(int, input()))
-print(s)
 result = 0
 initialNumber = s[0]
 prevNumber = s[0]

@@ -8,7 +8,3 @@ for i in range(1, len(s)):
         result *= s[i]
 
 print(result)
-
-
-
-
