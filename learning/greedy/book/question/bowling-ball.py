@@ -1,7 +1,7 @@
 """
 이것이 취업을 위한 코딩 테스트다 with 파이썬, 한빛 미디어, 나동빈
 p. 315
-기출 문제 5. 만들 수 없는 금액
+기출 문제 5. 볼링 공 고르기
 """
 from itertools import combinations
 
