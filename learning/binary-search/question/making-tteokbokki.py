@@ -11,19 +11,17 @@ data = list(map(int, input().split()))
 def binary_search(array, target):
     start = 0
     end = max(array)
-    result = []
+    result = 0
     while start <= end:
         mid = (start + end) // 2
         cut = list(map(lambda x: x-mid if x-mid >= 0 else 0, array))
-        if sum(cut) > target:
+        if sum(cut) >= target:
             start = mid + 1
-        elif sum(cut) < target:
-            end = mid - 1
+            result = mid
         else:
-            return mid
+            end = mid - 1
 
-
-    return max(result)
+    return result
 
 
 print(binary_search(data, m))
